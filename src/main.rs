@@ -1,6 +1,7 @@
 use std::env;
 
 mod day_01;
+mod day_02;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -23,6 +24,7 @@ fn main() {
             //println!("{}", _number);
             match number {
                 1 => day_01::solve(),
+                2 => day_02::solve(),
                 _ => eprintln!("Invalid argument."),
             }
         }
